@@ -2,8 +2,7 @@ package calculator_progarmme;
 
 public class simplecalculator {
 
-	private static final String Assert = null;
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

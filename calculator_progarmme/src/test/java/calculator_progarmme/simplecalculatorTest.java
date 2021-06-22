@@ -8,27 +8,29 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import maysupport.Calculator;
+
 public class simplecalculatorTest {
 
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
-
 	@Test
-	public void testMain() {
-		fail("Not yet implemented"); // TODO
+	public void test_Sum() {
+		calculator11 c = new calculator11();
+		int result = c.add(5, 2);
+		assertEquals(7, result);
 	}
 
+	
+	@Test
+	public void test_Sub() {
+		calculator11 c = new calculator11();
+		int result = c.subtract(5, 2);
+		assertEquals(3, result);
+	}
+	
+	@Test
+	public void test_division() {
+		calculator11 c = new calculator11();
+		int result = c.divide(10, 2);
+		assertEquals(5, result);
+	}
 }
